@@ -4,3 +4,6 @@ tensorboard/
 test/
 training/
 validation/
+masked/
+inpainted.zip
+masked.zip
