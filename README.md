@@ -7,13 +7,13 @@ is {road=1, background=0}. The goal is to train a classifier to segment roads in
 i.e. assign a probabilistic label {road=1, background=0} to each pixel.
 
 ## Generating datasets
-### Inpainted
-TODO
+### Masked/Inpainted
+Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh
 
 ### DataGlobe
 1. Make sure you download the full dataset from https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset/code
 2. Unzip it and rename the folder to DeepGlobe_Road_Extraction. 
-3. Creat ea folder named "DeepGlobeSampled" and inside the folders "images" and "grountruth" where the images are copied into.
+3. Create aa folder named "DeepGlobeSampled" and inside the folders "images" and "grountruth" where the images are copied into.
 4. Run the Notebook deepGlobe_sample.ipynb, which preprocesses the images of the DataGlobe dataset to the desired format
 
 
