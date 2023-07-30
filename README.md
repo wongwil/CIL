@@ -8,14 +8,14 @@ i.e. assign a probabilistic label {road=1, background=0} to each pixel.
 
 ## Generating datasets
 ### Masked/Inpainted
-Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh
+Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh.
+They contain the described datasets in our paper and are required to run the experiments.
 
 ### DataGlobe
 1. Make sure you download the full dataset from https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset/code
 2. Unzip it and rename the folder to DeepGlobe_Road_Extraction. 
 3. Create aa folder named "DeepGlobeSampled" and inside the folders "images" and "grountruth" where the images are copied into.
 4. Run the Notebook deepGlobe_sample.ipynb, which preprocesses the images of the DataGlobe dataset to the desired format
-
 
 ## Reproducing experiments
 - To perform the k-fold, all experiments for each method described in our paper can be run with the Experiment-kfold.ipynb Notebook.
