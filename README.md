@@ -12,7 +12,7 @@ The training requires the dataset from the kaggle competition. https://www.kaggl
 
 ### Masked/Inpainted
 Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh.
-They contain the described datasets in our paper and are required to run the experiments. Please unzip it without changing the folder name.
+They contain the described datasets in our paper and are required to run the experiments. The masked images were created with the script images/mask_images.py. Inpainting was done with RePaint (https://github.com/andreas128/RePaint) using their code in test.py with the test_p256_thin.yml configuration file.
 
 ### DataGlobe
 1. Make sure you download the full dataset from https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset/code
