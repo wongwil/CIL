@@ -11,14 +11,14 @@ i.e. assign a probabilistic label {road=1, background=0} to each pixel.
 TODO
 
 ### DataGlobe
-1. Make sure you you download the full dataset from https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset/code
+1. Make sure you download the full dataset from https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset/code
 2. Unzip it and rename the folder to DeepGlobe_Road_Extraction. 
-3. Creat a folder named "DeepGlobeSampled" and inside the folders "images" and "grountruth" where the images are copied into.
+3. Creat ea folder named "DeepGlobeSampled" and inside the folders "images" and "grountruth" where the images are copied into.
 4. Run the Notebook deepGlobe_sample.ipynb, which preprocesses the images of the DataGlobe dataset to the desired format
 
 
 ## Reproducing experiments
-- To perform the k-fold, all experiments for each method can be run with the Experiment-kfold.ipynb Notebook.
+- To perform the k-fold, all experiments for each method described in our paper can be run with the Experiment-kfold.ipynb Notebook.
 - To perform the experiment for the DeepGlobe Dataset use the Notebook Experiment-kfold_deepGlobe.ipynb
-- To run the methods described in our paper, create the augmentation folder with the Notebook and create the ImageDatasets with the
+- To run the methods, create the augmentation folder with the Experiment-kfold.ipynb Notebook and create the ImageDatasets with the
 desired parameters accordingly (e.g. use_augmentation=True)
