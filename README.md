@@ -6,10 +6,13 @@ ground truth labels are given where each pixel gets assigned a probability in [0
 is {road=1, background=0}. The goal is to train a classifier to segment roads in these images, 
 i.e. assign a probabilistic label {road=1, background=0} to each pixel.
 
-## Generating datasets
+## Required datasets
+### Kaggle competition dataset
+The training requires the dataset from the kaggle competition. https://www.kaggle.com/competitions/48353/leaderboard/download/public
+
 ### Masked/Inpainted
 Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh.
-They contain the described datasets in our paper and are required to run the experiments.
+They contain the described datasets in our paper and are required to run the experiments. Please unzip it without changing the folder name.
 
 ### DataGlobe
 1. Make sure you download the full dataset from https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset/code
@@ -22,3 +25,4 @@ They contain the described datasets in our paper and are required to run the exp
 - To perform the experiment for the DeepGlobe Dataset use the Notebook Experiment-kfold_deepGlobe.ipynb
 - To run the methods, create the augmentation folder with the Experiment-kfold.ipynb Notebook and create the ImageDatasets with the
 desired parameters accordingly (e.g. use_augmentation=True)
+- Run all cells in the Notebook to create a submission in .csv format
