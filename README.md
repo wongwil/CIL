@@ -23,6 +23,11 @@ They contain the described datasets in our paper and are required to run the exp
 ## Reproducing experiments
 - To perform the k-fold, all experiments for each method described in our paper can be run with the Experiment-kfold.ipynb Notebook.
 - To perform the experiment for the DeepGlobe Dataset use the Notebook Experiment-kfold_deepGlobe.ipynb
-- To run the methods, create the augmentation folder with the Experiment-kfold.ipynb Notebook and create the ImageDatasets with the
+- To run experiments with the U-Net with attention, make sure to inclue attn_unet.py to your Workspace and instance it with UTnet().
+- To run each method, create the augmentation folder (with the Experiment-kfold.ipynb Notebook) and create the ImageDatasets with the
 desired parameters accordingly (e.g. use_augmentation=True)
 - Run all cells in the Notebook to create a submission in .csv format
+
+## Final submission
+Our final submission was also run with Experiment-kfold.ipynb, but by combining the predicitions of all folds. The code to generate the submission is in the
+last cell in this Notebook.
