@@ -8,7 +8,7 @@ i.e. assign a probabilistic label {road=1, background=0} to each pixel.
 
 Authors: Gian Hess, Patrick Eppensteiner, William Wong
 
-Github-Repository: https://github.com/liamya/CIL/blob/main/README.md
+Github-Repository: https://github.com/liamya/CIL
 
 ## Required datasets
 ### Kaggle competition dataset
