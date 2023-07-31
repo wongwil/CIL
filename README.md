@@ -6,6 +6,9 @@ ground truth labels are given where each pixel gets assigned a probability in [0
 is {road=1, background=0}. The goal is to train a classifier to segment roads in these images, 
 i.e. assign a probabilistic label {road=1, background=0} to each pixel.
 
+Authors: Gian Hess, Patrick Eppensteiner, William Wong
+Github-Repository: https://github.com/liamya/CIL/blob/main/README.md
+
 ## Required datasets
 ### Kaggle competition dataset
 The training requires the dataset from the kaggle competition. https://www.kaggle.com/competitions/48353/leaderboard/download/public
