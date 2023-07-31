@@ -17,7 +17,7 @@ They contain the described datasets in our paper and are required to run the exp
 ### DataGlobe
 1. Make sure you download the full dataset from https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset/code
 2. Unzip it and rename the folder to DeepGlobe_Road_Extraction. 
-3. Create aa folder named "DeepGlobeSampled" and inside the folders "images" and "grountruth" where the images are copied into.
+3. Create aa folder named "DeepGlobeSampled" and inside the folders "images" and "groundtruth" where the images are copied into.
 4. Run the Notebook deepGlobe_sample.ipynb, which preprocesses the images of the DataGlobe dataset to the desired format
 
 ## Reproducing experiments
