@@ -11,7 +11,7 @@ i.e. assign a probabilistic label {road=1, background=0} to each pixel.
 The training requires the dataset from the kaggle competition. https://www.kaggle.com/competitions/48353/leaderboard/download/public
 
 ### Masked/Inpainted
-Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh.
+Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh
 They contain the described datasets in our paper and are required to run the experiments. The masked images were created with the script images/mask_images.py. Inpainting was done with RePaint (https://github.com/andreas128/RePaint) using their code in test.py with the test_p256_thin.yml configuration file. Finally, the images were reassembled to their full resolution using the script inpainting/reassemble_images.py.
 
 ### DataGlobe
@@ -25,9 +25,9 @@ They contain the described datasets in our paper and are required to run the exp
 - To perform the experiment for the DeepGlobe Dataset use the Notebook Experiment-kfold_deepGlobe.ipynb
 - To run experiments with the U-Net with attention, make sure to inclue attn_unet.py to your Workspace and instance it with UTnet().
 - To run each method, create the augmentation folder (with the Experiment-kfold.ipynb Notebook) and create the ImageDatasets with the
-desired parameters accordingly (e.g. use_augmentation=True)
+desired parameters accordingly (e.g. use_augmentation=True). In case you want to switch between inpainted or masked images, just replace
+the folder path accordingly in the ImageDataset class and in the creation of the augmentation folder.
 - Run all cells in the Notebook to create a submission in .csv format
 
 ## Final submission
-Our final submission was also run with Experiment-kfold.ipynb, but by combining the predicitions of all folds. The code to generate the submission is in the
-last cell in this Notebook.
+Our final submission was also run with Experiment-kfold.ipynb and using masked images, but by combining the predicitions of all folds. The code to generate the the submission with the averages is in the last cell in this Notebook. To reproduce the final submission, make sure to run the Notebook and set variable inpainted_path on "masked", so it takes the images from the masked folder.
