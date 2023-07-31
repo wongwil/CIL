@@ -7,6 +7,7 @@ is {road=1, background=0}. The goal is to train a classifier to segment roads in
 i.e. assign a probabilistic label {road=1, background=0} to each pixel.
 
 Authors: Gian Hess, Patrick Eppensteiner, William Wong
+
 Github-Repository: https://github.com/liamya/CIL/blob/main/README.md
 
 ## Required datasets
