@@ -10,6 +10,8 @@ Authors: Gian Hess, Patrick Eppensteiner, William Wong
 
 Github-Repository: https://github.com/liamya/CIL
 
+Paper: https://github.com/wongwil/CIL/blob/main/report.pdf
+
 ## Required datasets
 ### Kaggle competition dataset
 The training requires the dataset from the kaggle competition. https://www.kaggle.com/competitions/48353/leaderboard/download/public
