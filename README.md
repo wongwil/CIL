@@ -1,16 +1,15 @@
 # CIL - Road Segmentation project
-Segmenting an image consists in partitioning an image into multiple segments (formally 
-one has to assign a class label to each pixel).
-For this problem,  144 aerial images are provided which were acquired from Google Maps. For each image
-ground truth labels are given where each pixel gets assigned a probability in [0,1] that it 
-is {road=1, background=0}. The goal is to train a classifier to segment roads in these images, 
-i.e. assign a probabilistic label {road=1, background=0} to each pixel.
+
+Data annotation is a labor-intensive and expensive process. One way of making more efficient use of data is data augmentation. In this paper we investigate the application of diffusion models for data augmentation in the task of road segmentation. We aim to improve the generalization performance of a segmentation model by increasing its robustness to occlusions. To this end, we propose a method to augment the data set by masking and inpainting images with diffusion models while retaining ground truth information. We train a U-Net architecture using the inpainted data samples and compare it with other techniques such as basic data augmentation or using additional real data. The inpainting method achieves an improvement of 2\% over using the original data set and 1\% over using an external data set of bigger size, but only 0.02\% over basic data augmentation.
+Although the improvement over basic data augmentation is not substantial, the method is promising because it can potentially introduce more diverse and realistic data than simpler augmentation methods.
+
+<img width="376" alt="image" src="https://github.com/wongwil/CIL/assets/11984597/524080d0-1a1b-4932-ace2-ba3b42282cf4">
+
+
 
 Authors: Gian Hess, Patrick Eppensteiner, William Wong
 
-Github-Repository: https://github.com/liamya/CIL
-
-Paper: https://github.com/wongwil/CIL/blob/main/report.pdf
+More details can be found in our paper: https://github.com/wongwil/CIL/blob/main/report.pdf
 
 ## Required datasets
 ### Kaggle competition dataset
