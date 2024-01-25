@@ -16,7 +16,8 @@ More details can be found in our paper: https://github.com/wongwil/CIL/blob/main
 The training requires the dataset from the kaggle competition. https://www.kaggle.com/competitions/48353/leaderboard/download/public
 
 ### Masked/Inpainted
-Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh
+Both datasets can be downloaded here: https://polybox.ethz.ch/index.php/s/7ndkvkoVd68JEoh.
+
 They contain the described datasets in our paper and are required to run the experiments. The masked images were created with the script images/mask_images.py. Inpainting was done with RePaint (https://github.com/andreas128/RePaint) using their code in test.py with the test_p256_thin.yml configuration file. Finally, the images were reassembled to their full resolution using the script inpainting/reassemble_images.py.
 
 ### DataGlobe
